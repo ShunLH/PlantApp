@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct PlantListResponse : Codable {
+	let code : Int?
+	let message : String?
+	let data : [PlantVO]?
+	
+}

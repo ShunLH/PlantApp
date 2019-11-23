@@ -7,3 +7,9 @@
 //
 
 import Foundation
+struct UserResponse : Codable {
+	let code : Int?
+	let message : String?
+	let data : LoginUserVO?
+	
+}

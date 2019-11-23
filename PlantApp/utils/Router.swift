@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+class Router{
+	
+	static func getPlantDetailViewController() -> PlantDetailViewController {
+		let sb = UIStoryboard(name: SB_HOME, bundle: nil)
+		let viewcontroller = sb.instantiateViewController(withIdentifier: PlantDetailViewController.identifier) as! PlantDetailViewController
+		return viewcontroller
+	}
+}

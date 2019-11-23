@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RealmSwift
+import LGSideMenuController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+		print(Realm.Configuration.defaultConfiguration.fileURL?.absoluteString ?? "")
+		if (UserDefaults.standard.value(forKey: IS_LOGIN) != nil) {
+			let storyboard = UIStoryboard(name: "Home", bundle: nil)
+			let vc = storyboard.instantiateViewController(withIdentifier: String(describing: PlantListViewController.self)) as! LGSideMenuController
+			window?.rootViewController = vc
+		}
+		
+		
         return true
     }
 

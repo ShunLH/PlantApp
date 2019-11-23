@@ -7,3 +7,10 @@
 //
 
 import Foundation
+struct Err : Codable {
+	let name : String?
+	let message : String?	
+}
+struct ErrorResponse : Codable {
+	let error : Err?
+}

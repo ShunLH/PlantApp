@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct TipVO {
+struct TipVO : Codable{
     let temperature : String?
     let light : String?
     let placement : String?

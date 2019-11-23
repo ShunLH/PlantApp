@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct PlantVO {
+struct PlantVO : Codable{
     let plant_id : String?
     let plant_name : String?
-    let plant_type : [String]?
+    var plant_type : [String]?
     let description : String?
     let top_tip : String?
     let tips :TipVO?

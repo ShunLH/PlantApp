@@ -13,8 +13,10 @@ class TipCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblTip : UILabel!
     @IBOutlet weak var lblValue : UILabel!
     
-    static var identifier : String! {
+	@IBOutlet weak var ivTip: UIImageView!
+	static var identifier : String! {
         return String(describing: self)
+		
     }
 
     override func awakeFromNib() {
