@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TipCollectionViewCell" customModule="PlantApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="177"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="167" height="177"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTR-mE-TNd">
+                        <rect key="frame" x="0.0" y="0.0" width="167" height="177"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Kg-UO-va9" customClass="RoundCornerView" customModule="PlantApp" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="147" height="157"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23-40 C'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taT-CH-syb">
+                                        <rect key="frame" x="8" y="126" width="71.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yUP-yw-7Hm">
+                                        <rect key="frame" x="10" y="10" width="35" height="35"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-warm-50" translatesAutoresizingMaskIntoConstraints="NO" id="ZcA-YN-eFJ">
+                                                <rect key="frame" x="7.5" y="7.5" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="WhiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="0wq-eH-pRp"/>
+                                                    <constraint firstAttribute="height" constant="20" id="7wp-8K-g8f"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.56862745100000001" blue="0.20000000000000001" alpha="0.5568546660958904" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="1Mp-mB-TCb"/>
+                                            <constraint firstAttribute="width" constant="35" id="a1u-eh-NwH"/>
+                                            <constraint firstItem="ZcA-YN-eFJ" firstAttribute="centerX" secondItem="yUP-yw-7Hm" secondAttribute="centerX" id="u13-5n-idl"/>
+                                            <constraint firstItem="ZcA-YN-eFJ" firstAttribute="centerY" secondItem="yUP-yw-7Hm" secondAttribute="centerY" id="zKF-8J-M2e"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drG-dN-jNH">
+                                        <rect key="frame" x="8" y="103.5" width="72" height="14.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="GreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="drG-dN-jNH" firstAttribute="leading" secondItem="6Kg-UO-va9" secondAttribute="leading" constant="8" id="8j4-dy-tnh"/>
+                                    <constraint firstItem="yUP-yw-7Hm" firstAttribute="top" secondItem="6Kg-UO-va9" secondAttribute="top" constant="10" id="D5s-4E-scd"/>
+                                    <constraint firstItem="taT-CH-syb" firstAttribute="top" secondItem="drG-dN-jNH" secondAttribute="bottom" constant="8" id="Fhs-S0-Tqj"/>
+                                    <constraint firstItem="yUP-yw-7Hm" firstAttribute="leading" secondItem="6Kg-UO-va9" secondAttribute="leading" constant="10" id="LVo-58-mUY"/>
+                                    <constraint firstAttribute="bottom" secondItem="taT-CH-syb" secondAttribute="bottom" constant="10" id="Mvq-em-G0p"/>
+                                    <constraint firstItem="taT-CH-syb" firstAttribute="leading" secondItem="6Kg-UO-va9" secondAttribute="leading" constant="8" id="ORk-2H-icq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="leftCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rightCorner" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6Kg-UO-va9" secondAttribute="bottom" constant="10" id="Gp0-tN-pMd"/>
+                            <constraint firstItem="6Kg-UO-va9" firstAttribute="leading" secondItem="bTR-mE-TNd" secondAttribute="leading" constant="10" id="WmE-JA-4TB"/>
+                            <constraint firstAttribute="trailing" secondItem="6Kg-UO-va9" secondAttribute="trailing" constant="10" id="YqK-VM-GWj"/>
+                            <constraint firstItem="6Kg-UO-va9" firstAttribute="top" secondItem="bTR-mE-TNd" secondAttribute="top" constant="10" id="qVB-tB-45F"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bTR-mE-TNd" secondAttribute="bottom" id="110-6F-lFv"/>
+                <constraint firstItem="bTR-mE-TNd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FAW-9g-va4"/>
+                <constraint firstItem="bTR-mE-TNd" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UKg-3a-sDk"/>
+                <constraint firstAttribute="trailing" secondItem="bTR-mE-TNd" secondAttribute="trailing" id="y64-Qx-SYK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="167" height="177"/>
+            <connections>
+                <outlet property="lblTip" destination="drG-dN-jNH" id="MPX-rI-bDQ"/>
+                <outlet property="lblValue" destination="taT-CH-syb" id="8bp-Ha-ThY"/>
+            </connections>
+            <point key="canvasLocation" x="222.46376811594206" y="140.95982142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-warm-50" width="50" height="50"/>
+        <namedColor name="GreenColor">
+            <color red="0.27450980392156865" green="0.56862745098039214" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="WhiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
